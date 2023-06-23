@@ -1,4 +1,4 @@
-# A colaboration project on printf
+# An ALX colaboration project on printf 
 
 ## Project team:
 
@@ -6,11 +6,11 @@
 
 - Collaborator: Egbayelo Mayowa
 
-### Synopsis
+### Abstract
 
 This function printf() writes output to stdout, the standard output stream with the format and options without making use of any of the standard library files. With the output error if encountered returns a negative value of -1. 
 
-+ Function used: int printf(const char format)
++ Function used: int printf(const char format).
  
 ---
 
