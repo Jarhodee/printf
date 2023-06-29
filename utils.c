@@ -67,9 +67,9 @@ int i_digits(char d)
 long int convert_size_number(long int nums, int siz_es)
 
 {
-	if (siz_es == X_LONG)
+	if (siz_es == S_LONG)
 		return (nums);
-	else if (siz_es == X_SHORT)
+	else if (siz_es == S_SHORT)
 		return ((short)nums);
 
 	return ((int)nums);
@@ -86,9 +86,9 @@ long int convert_size_number(long int nums, int siz_es)
 long int convert_size_unsgnd(unsigned long int nums, int siz_es)
 
 {
-	if (siz_es == X_LONG)
+	if (siz_es == S_LONG)
 		return (nums);
-	else if (siz_es == X_SHORT)
+	else if (siz_es == S_SHORT)
 		return ((unsigned short)nums);
 
 	return ((unsigned int)nums);

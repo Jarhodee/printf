@@ -31,13 +31,13 @@ int handle_write_charss(char g, char buffer[],
 	{
 		buffer[BUFF_SIZE - 1] = '\0';
 		for (y = 0; y < wid_th - 1; y++)
-			buffer[BUFF_SIZE - i - 2] = padd;
+			buffer[BUFF_SIZE - y - 2] = padd;
 
 		if (flg & F_MINUS)
 			return (write(1, &buffer[0], 1) +
-					write(1, &buffer[BUFF_SIZE - i - 1], wid_th - 1));
+					write(1, &buffer[BUFF_SIZE - y - 1], wid_th - 1));
 		else
-			return (write(1, &buffer[BUFF_SIZE - i - 1], wid_th - 1) +
+			return (write(1, &buffer[BUFF_SIZE - y - 1], wid_th - 1) +
 					write(1, &buffer[0], 1));
 	}
 
@@ -57,7 +57,7 @@ int handle_write_charss(char g, char buffer[],
  * Return: the number of chars printed.
  */
 
-int write_num(int is_negative, int indx, char buffer[],
+int write_number(int is_negative, int indx, char buffer[],
 		int flg, int wid_th, int is_precision, int sizes)
 {
 	int len_ght = BUFF_SIZE - indx - 1;
